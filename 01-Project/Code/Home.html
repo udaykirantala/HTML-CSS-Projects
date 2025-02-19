@@ -8,796 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        /* hrader */
-        header{
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        .headerdetails{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0% 5% 0% 4%;
-        }
-        .headerlogo img{
-            width:220px;
-        }
-        .headerlinks{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items:center;
-            column-gap: 50px;
-        }
-        .headerlinks a{
-            font-size: 20px;
-            text-decoration: none;
-            color: black;
-        }
-        .headersearchbar{
-            position: relative;
-        }
-        .headersearchbar #search{
-            width: 260px;
-            height: 35px;
-        }
-        .headersearchbar i{
-            position: absolute;
-            right: 8px;
-            top: 7px;
-            font-size: 20px;
-        }
-        .headericons{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            column-gap: 30px;
-            font-size: 20px;
-        }
-        .myaccountheaderlink{
-            padding-top:20px;
-        }
-        /* header ending */
-        /* body */
-        body{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        .textcolour{
-            color: rgb(17, 92, 23);
-        }
-        /* Main Hot Promotions */
-        .mainhotpromotions{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0% 5% 0% 4%;
-        }
-        .mainhotpromotionstext p{
-            font-size: 30px;
-            color: rgba(0, 0, 0, 0.779);
-        }
-        .mainhotpromotions h3,h2{
-            font-size: 70px;
-            margin: 0%;
-        }
-        .mainhotpromotions h2{
-            margin-top: 40px;
-            color:rgb(17, 92, 23);
-        }
-        .mainhotpromotionspimg{
-            padding: 0% 0% 0% 5%;
-        }
-        .mainhotpromotionstext button{
-            width:150px ;
-            height: 50px;
-            background-color: rgb(17, 92, 23);
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        .mainhotpromotionstext button:hover{
-            background-color:white;
-            color: rgb(13, 122, 22);
-            border: 1px solid rgb(13, 122, 22);
-        }
-        /* Popular Categories */
-        .Popularcategoriestext{
-            padding: 0% 5% 0% 4%;
-            font-size: 30px;
-        }
-        .Popularcategoriescarts{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0% 5% 0% 4%;
-        }
-        .Popularcategoriescarts img{
-            width:210px;
-            border-radius: 8px;
-        }
-        .Popularcategoriescarts p{
-            text-align: center;
-        }
-        .imgcategory{
-            border: none;
-            padding: 10px;
-        }
-        .category-1home,.category-2home,.category-3home,.category-4home,.category-5home{
-            border: 1px solid greenyellow;
-            border-radius: 8px;
-        }
-        /* typesofcategories */
-        .main-Categories{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 40%;
-            border: none;
-            padding: 0% 5% 0% 1.3%;
-        }
-        .main-Categories p{
-            background-color: rgb(181, 180, 180);
-            padding:10px 25px;
-            border-radius: 5px;
-        }
-        .main-Categories p:hover{
-            background-color:orange;
-        }
-/* Carts starting */
-
-        /* Carts image and icons staing */
-        .carts-inner-img{
-            width: 35%;
-            position: relative;
-            border: none;
-        }
-        .carts-inner-img img{
-            width:410px;
-            height: 375px;
-        }
-        .carts-img .back-img{
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            /* opacity: 0;
-            transition: 0.7s;
-            transition-timing-function:ease-in-out; */
-        }
-        .carts-img .back-img:hover {
-            opacity: 1;
-            transform: scale(1.0);
-            transition: 0.7s;
-            transition-timing-function: ease-in-out;
-        }
-        .carts-inner-img i{
-            position: absolute;
-            top: 48%;
-            left: 80%;
-            font-size: 25px;
-            background-color: aquamarine;
-            padding: 10px;
-            border-radius: 90px;
-        }
-        #icon2{
-        margin-left: 50%;
-        }
-        #icon3{
-            margin-left: 100%;
-        }
-        .carts-img span{
-            opacity: 0;
-            transform: scale(1.0);
-            transition: 0.7s;
-            transition-timing-function: ease-in-out;
-        }
-        .carts-img span:hover{
-            opacity: 1;
-            transform: scale(1.0);
-            transition: 0.7s;
-            transition-timing-function: ease-in-out;
-        }
-        .front-img,.back-img{
-            border:none;
-            border-radius: 20px;
-        }
-        /* Carts image and icons ending */
-        /* Product details starting */
-        .carts-products-category{
-            font-size: 15px;
-            color: rgba(128, 128, 128, 0.832);
-            margin:10px 0px 15px 0px;
-        }
-        .carts-products-details h3{
-            font-size: 25px;
-            margin:0px 0px 15px 0px;
-        }
-        .carts-discount-price{
-            font-size: 18px;
-            color: rgb(17, 92, 23);
-        }
-        .carts-original-price{
-            color: rgb(181, 180, 180);
-            text-decoration: line-through;
-            padding-left: 10px;
-        }
-        .icon4{
-            position: absolute;
-            top:70%;
-            left: 80%;
-            font-size: 20px;
-            background-color: aquamarine;
-            padding: 2.5%;
-            border: none;
-            border-radius: 90px;
-        }
-        .carts-products-details{
-            position: relative;
-        }
-        .carts-inner-img i:hover{
-            background-color:chartreuse;
-        }
-        .icon4:hover{
-            background-color: chartreuse;
-        }
-        /* tooltip staring */
-        /* tooltip 1 */
-        .tooltip1{
-            position: relative;
-            top: 0%;
-            bottom: 195px;
-        }
-        .tooltip1 .tooltiptext1 {
-            visibility: hidden;
-            width: 120px;
-            background-color:rgba(38, 37, 37, 0.455);
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 5px;
-            left: 135px;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .tooltip1:hover .tooltiptext1 {
-            visibility: visible;
-            opacity: 1;
-        }
-        /* tooltip 2 */
-        .tooltip2{
-            position: relative;
-            top: 0%;
-            bottom: 195px;
-        }
-        .tooltip2 .tooltiptext2 {
-            visibility: hidden;
-            width: 120px;
-            background-color:rgba(38, 37, 37, 0.455);
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 5px;
-            left: 210px;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .tooltip2:hover .tooltiptext2 {
-            visibility: visible;
-            opacity: 1;
-        }
-        /* tooltip 3 */
-        .tooltip3{
-            position: relative;
-            top: 0%;
-            bottom: 195px;
-        }
-        .tooltip3 .tooltiptext3 {
-            visibility: hidden;
-            width: 120px;
-            background-color:rgba(38, 37, 37, 0.455);
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 5px;
-            left: 280px;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .tooltip3:hover .tooltiptext3 {
-            visibility: visible;
-            opacity: 1;
-        }
-        /* tooltip Ending */
-
-        /* Product details ending */
-
-        /* all carts starting */
-        .total-carts-section{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0% 5% 0% 4%;
-        }
-        .all-carts{
-            border: 1px solid greenyellow;
-            padding:1%;
-            border-radius: 20px;
-        }
-        /* Third Sections Carts */
-        .total-carts-Third-Section{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: row;
-            column-gap: 10px;
-            padding: 0% 34.5% 0% 2.5%;
-        }
-        #all-carts-third-carts{
-            padding: 1.5%;
-        }
-        .featured-carts-dic-text1,.featured-carts-dic-text2,.featured-carts-dic-text3,.featured-carts-dic-text4,.featured-carts-dic-text5,.featured-carts-dic-text6,.featured-carts-dic-text7,.featured-carts-dic-text8{
-            position: absolute;
-            top: 0%;
-            left: 10%;
-        }
-        .featured-carts-dic-text1{
-            background-color: pink;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 15px;
-        }
-        .featured-carts-dic-text2{
-            background-color:darkolivegreen;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 15px;
-        }
-        .featured-carts-dic-text3{
-            background-color:orange;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 15px;
-        }
-        .featured-carts-dic-text4{
-            background-color: lightblue;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 15px;
-        }
-        .featured-carts-dic-text5{
-            background-color: blueviolet;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 15px;
-        }
-        .featured-carts-dic-text6{
-            background-color:burlywood;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 15px;
-        }
-        .featured-carts-dic-text7{
-            background-color:#FFD43B;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 15px;
-        }
-        .featured-carts-dic-text8{
-            background-color:violet;
-            padding: 5px 10px 5px 10px;
-            border: none;
-            border-radius: 15px;
-        }
-        /* all carts ending */
-        /* Carts ending */
-
-        /* Delas Section */
-        .delas-section{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0% 5% 0% 4%;
-        }
-        .delas-section img{
-            width:670px;
-            height: 520px;
-            border-radius: 20px;
-        }
-        /* Delas of the day */
-        .deals-of-the-day-total-card{
-            position: relative;
-            top: 0%;
-        }
-        .deals-of-the-day{
-            position: absolute;
-            top: 0%;
-            bottom: 0%;
-            padding: 7% 0% 0% 3%;
-        }
-        .deals-of-the-day h3{
-            font-size: 35px;
-            color: rgb(13, 122, 22);
-            margin: 0%;
-        }
-        .deals-of-the-day-quntity,.deals-of-the-day-offer-span{
-            color: rgba(0, 0, 0, 0.412);
-        }
-        .deals-of-the-day-collection{
-            font-size: 30px;
-        }
-        .deals-of-the-day-price{
-            font-size: 28px;
-            color: #ff0000;
-        }
-        .deals-of-the-day-original-price{
-            text-decoration: line-through;
-            color: rgb(181, 180, 180);
-            padding-left: 10px;
-        }
-        .deals-of-the-day-offer-span{
-            font-size: 20px;
-        }
-        .deals-of-the-day-time{
-            font-size: 25px;
-        }
-        .deals-of-the-day-time-days{
-            margin-right: 10px;
-            background-color:rgb(13, 122, 22);
-            padding: 4%;
-            border-radius: 15px;
-        }
-        .deals-of-the-day-time-hour,.deals-of-the-day-time-minutes{
-            margin: 0px 10px 0px 10px;
-            background-color:rgb(13, 122, 22);
-            padding: 4%;
-            border-radius: 20px;
-        }
-        .deals-of-the-day-time-secs{
-            margin-left: 10px;
-            background-color:rgb(13, 122, 22);
-            padding: 4%;
-            border-radius: 20px;
-        }
-        .deals-of-the-day-days-day{
-            margin: 0px 10px 0px 10px;
-        }
-        .deals-of-the-day-days-hours{
-            margin: 0px 20px 0px 35px;
-        }
-        .deals-of-the-day-minutes{
-            margin: 0px 20px 0px 30px;
-        }
-        .deals-of-the-day-days-secs{
-            margin: 0px 20px 0px 35px;
-        }
-        .deals-of-the-day button{
-            background-color: rgba(173, 216, 230, 0.349);
-            border: 1px solid rgb(13, 122, 22);
-            color: rgb(13, 122, 22);
-            padding: 10px;
-            font-size: 20px;
-            border-radius: 15px;
-        }
-
-        /* New Arrivals Starting */
-        .new-arrivals-img img{
-            width:270px;
-            border: none;
-            border-radius: 20px;
-        }
-        .new-arrivals-product-details-category{
-            color: rgba(128, 128, 128, 0.832);
-        }
-        .new-arrivals-product-details h3{
-            font-size: 20px;
-            margin-bottom:10px;
-        }
-        .new-arrivals-product-details-discount-price{
-            color: rgb(17, 92, 23);
-        }
-        .new-arrivals-product-details-original-price{
-            color: rgba(128, 128, 128, 0.832);
-            text-decoration: line-through;
-        }
-        .new-arrivals-product-details{
-            position: relative;
-        }
-        .new-arrivals-icon4{
-            position: absolute;
-            top: 70%;
-            left: 80%;
-        }
-        .new-arrivals-icon4 i{
-        font-size: 20px;
-        background-color: aquamarine;
-        padding: 12px;
-        border-radius: 90px;
-        }
-        .new-arrivals-total-carts-container{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .new-arrivals-text-heading h3{
-            padding: 0% 5% 0% 4.5%;
-            font-size: 30px;
-        }
-        .new-arrivals-carts-container{
-            border: 1px solid greenyellow;
-            padding: 1%;
-            border-radius: 20px;
-        }
-        .new-arrivals-icon4 i:hover{
-            background-color: chartreuse;
-        }
-        /* New Arrivals Ending */
-
-        /* Relese Delese Carts Starting*/
-        .releses-deals-total-carts{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 0% 5% 0% 4%;
-            flex-direction: row;
-            column-gap: 90px;
-        }
-        /* Relese Delese Crts ending */
-        /* Hot Relese Delas Starting */
-        .hot-relese-delas-heading{
-            position: relative;
-        }
-        .hot-relese-delas-heading h3::after{
-            content: '';
-            position: absolute;
-            background:linear-gradient(to right,rgb(11, 189, 132),gray);
-            width: 100%;
-            height: 3px;
-            top: 40px;
-            left: 0%;
-        }
-        .hot-relese-delas-heading h3{
-            font-size:30px;
-        }
-        .hot-relese-delas-img1,.hot-relese-delas-img2,.hot-relese-delas-img3{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .hot-relese-delas-img1 img{
-            width: 100px;
-        }
-        .hot-relese-delas-img2 img{
-            width: 100px;
-        }
-        .hot-relese-delas-img3 img{
-            width: 100px;
-        }
-        .hot-relese-delas-img-details{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            row-gap: 20px;
-        }
-        .hot-relese-delas-img1,.hot-relese-delas-img2,.hot-relese-delas-img3{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: row;
-            column-gap: 20px;
-        }
-        .hot-relese-delas-img2{
-            padding-right: 80px;
-        }
-        .hot-relese-delas-img3{
-            padding-right:40px;
-        }
-        /* Hot Relse Delse Ending */
-        /* Deals & Outlet Starting */
-        .hot-relese-delas-Outlet-heading{
-            position: relative;
-        }
-        .hot-relese-delas-Outlet-heading h3::after{
-            content: '';
-            position: absolute;
-            background:linear-gradient(to right,rgb(11, 189, 132),gray);
-            width: 100%;
-            height: 3px;
-            top: 40px;
-            left: 0%;
-        }
-        .hot-relese-delas-Outlet-heading h3{
-            font-size:30px;
-        }
-        .hot-relese-delas-Outlet-img1,.hot-relese-delas-Outlet-img2,.hot-relese-delas-Outlet-img3{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .hot-relese-delas-Outlet-img1 img{
-            width: 100px;
-        }
-        .hot-relese-delas-Outlet-img2 img{
-            width: 100px;
-        }
-        .hot-relese-delas-Outlet-img3 img{
-            width: 100px;
-        }
-        .hot-relese-delas-Outlet-img-details{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            row-gap: 20px;
-        }
-        .hot-relese-delas-Outlet-img1,.hot-relese-delas-Outlet-img2,.hot-relese-delas-Outlet-img3{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: row;
-            column-gap: 20px;
-        }
-        .hot-relese-delas-Outlet-img2{
-            padding-right: 40px;
-        }
-        .hot-relese-delas-Outlet-img3{
-            padding-right:30px;
-        }
-        /* Delas & Outlet Ending */
-        /* Top Seling Starting */
-        .hot-relese-top-seling-heading{
-            position: relative;
-        }
-        .hot-relese-top-seling-heading h3::after{
-            content: '';
-            position: absolute;
-            background:linear-gradient(to right,rgb(11, 189, 132),gray);
-            width: 100%;
-            height: 3px;
-            top: 40px;
-            left: 0%;
-        }
-        .hot-relese-top-seling-heading h3{
-            font-size:30px;
-        }
-        .hot-relese-top-seling-img1,.hot-relese-top-seling-img2,.hot-relese-top-seling-img3{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .hot-relese-top-seling-img1 img{
-            width: 100px;
-        }
-        .hot-relese-top-seling-img2 img{
-            width: 100px;
-        }
-        .hot-relese-top-seling-img3 img{
-            width: 100px;
-        }
-        .hot-relese-top-seling-img-details{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            row-gap: 20px;
-        }
-        .hot-relese-top-seling-img1,.hot-relese-top-seling-img2,.hot-relese-top-seling-img3{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: row;
-            column-gap: 20px;
-        }
-        .hot-relese-top-seling-img3{
-            padding-right:5PX;
-        }
-        .hot-relese-top-seling-img1,.hot-relese-top-seling-img2{
-            padding-right: 40PX;
-        }
-        /* Top Seling Ending */
-        /* trendy Strating */
-        .trendy-relse-delas{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0% 5% 0% 6%;
-
-        }
-        .hot-relese-trendy-heading{
-            position: relative;
-        }
-        .hot-relese-trendy-heading h3::after{
-            content: '';
-            position: absolute;
-            background:linear-gradient(to right,rgb(11, 189, 132),gray);
-            width: 100%;
-            height: 3px;
-            top: 40px;
-            left: 0%;
-        }
-        .hot-relese-trendy-heading h3{
-            font-size:30px;
-        }
-        .hot-relese-trendy-img1,.hot-relese-trendy-img2,.hot-relese-trendy-img3{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .hot-relese-trendy-img1 img{
-            width: 100px;
-        }
-        .hot-relese-trendy-img2 img{
-            width: 100px;
-        }
-        .hot-relese-trendy-img3 img{
-            width: 100px;
-        }
-        .hot-relese-trendy-img-details{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            row-gap: 20px;
-        }
-        .hot-relese-trendy-img1,.hot-relese-trendy-img2,.hot-relese-trendy-img3{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: row;
-            column-gap: 20px;
-        }
-        .hot-relese-trendy-img3{
-            padding-right:30PX;
-        }
-        .hot-relese-trendy-img2{
-            padding-right: 30px;
-        }
-        .hot-relese-trendy-img1{
-            padding-right: 40PX;
-        }
-        /* trendy ending */
-        .footer-mail-login-details{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color:rgba(64, 224, 208, 0.474);
-            height: 80px;
-            font-size: 20px;
-            column-gap: 110px;
-        }
-        .footer-mail-login-details input{
-            width: 250px;
-            height: 33px;
-            border: none;
-        }
-        .footer-mail-login-details button{
-            width: 100px;
-            height: 35px;
-            border: none;
-            background-color: black;
-            color: white;
-        }
-        .footer-mail-login-inputbar{
-            position: relative;
-            right: 50px;
-        }
-        .footer-mail-login-inputbar button{
-            position: absolute;
-            left: 254px;
-        }
-    </style>
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <!-- Header starting -->
 <header class="headerdetails">
@@ -922,7 +133,7 @@
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p class="carts-discount-price">$238.85 <span class="carts-original-price">$245.8</span></p>
-                <div class="icon4"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="tooltip4"><i class="fa-solid fa-cart-arrow-down" id="tooltip4" id="tooltip4"></i><span class="tooltiptext4">Add to Cart</span></div>
             </div>
         </div>
         <div class="all-carts">
@@ -947,7 +158,7 @@
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p class="carts-discount-price">$238.85 <span class="carts-original-price">$245.8</span></p>
-                <div class="icon4"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="tooltip4"><i class="fa-solid fa-cart-arrow-down" id="tooltip4"></i><span class="tooltiptext4">Add to Cart</span></div>
             </div>
         </div>
         <div class="all-carts">
@@ -972,7 +183,7 @@
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p class="carts-discount-price">$238.85 <span class="carts-original-price">$245.8</span></p>
-                <div class="icon4"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="tooltip4"><i class="fa-solid fa-cart-arrow-down" id="tooltip4"></i><span class="tooltiptext4">Add to Cart</span></div>
             </div>
         </div>
     </section><br>
@@ -1001,7 +212,7 @@
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p class="carts-discount-price">$238.85 <span class="carts-original-price">$245.8</span></p>
-                <div class="icon4"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="tooltip4"><i class="fa-solid fa-cart-arrow-down" id="tooltip4"></i><span class="tooltiptext4">Add to Cart</span></div>
             </div>
         </div>
         <div class="all-carts">
@@ -1026,7 +237,7 @@
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p class="carts-discount-price">$238.85 <span class="carts-original-price">$245.8</span></p>
-                <div class="icon4"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="tooltip4"><i class="fa-solid fa-cart-arrow-down" id="tooltip4"></i><span class="tooltiptext4">Add to Cart</span></div>
             </div>
         </div>
         <div class="all-carts">
@@ -1051,7 +262,7 @@
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p class="carts-discount-price">$238.85 <span class="carts-original-price">$245.8</span></p>
-                <div class="icon4"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="tooltip4"><i class="fa-solid fa-cart-arrow-down" id="tooltip4"></i><span class="tooltiptext4">Add to Cart</span></div>
             </div>
         </div>
     </section><br>
@@ -1080,7 +291,7 @@
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p class="carts-discount-price">$238.85 <span class="carts-original-price">$245.8</span></p>
-                <div class="icon4"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="tooltip4"><i class="fa-solid fa-cart-arrow-down" id="tooltip4"></i><span class="tooltiptext4">Add to Cart</span></div>
             </div>
         </div>
         <div class="all-carts" id="all-carts-third-carts">
@@ -1105,7 +316,7 @@
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p class="carts-discount-price">$238.85 <span class="carts-original-price">$245.8</span></p>
-                <div class="icon4"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="tooltip4"><i class="fa-solid fa-cart-arrow-down" id="tooltip4"></i><span class="tooltiptext4">Add to Cart</span></div>
             </div>
         </div>
     </section><br>
@@ -1367,8 +578,58 @@
             </div>
         </div><br>
         <!-- Mail Login Details Ending -->
-
-        
+        <!-- Footer Details Starting -->
+        <section class="footer-details">
+            <div class="footer-img-contact-details">
+                <img src="../Media/logo.png" alt="Fotter-logo">
+                <div>
+                    <p class="footer-ligther-text">Contact</p>
+                    <p>Address:<span>13 Tlemcen Road,Street 32,Beb-Eahren</span></p>
+                    <p>Phone:<span>+01 2222 365/(+91)01 23456789</span></p>
+                    <p>Hours:<span>10:00 - 18:00,Mon-Sat</span></p>
+                </div>
+                <div class="footer-contact-details-follow-mme-text">
+                    <p>Follow Me</p>
+                    <span class="footer-social-media-icons"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-pinterest-p"></i><i class="fa-brands fa-youtube"></i></span>
+                </div>
+            </div>
+            <div class="footer-address-details">
+                <div class="footer-address-details-address-text">
+                    <p>Address</p>
+                </div>
+                <div class="footer-address-details-text">
+                    <p>About Us</p>
+                    <p>Delivery Information</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Contact Us</p>
+                    <p>Support Center</p>
+                </div>
+            </div>
+            <div class="footer-address-details">
+                <div class="footer-address-details-address-text">
+                    <p>My Account</p>
+                </div>
+                <div  class="footer-address-details-text">
+                    <p>Sign In</p>
+                    <p>View Cart</p>
+                    <p>My Whishlist</p>
+                    <p>Track My Order</p>
+                    <p>Help</p>
+                    <p>Order</p>
+                </div>
+            </div>
+            <div class="footer-pyament-methods-details">
+                <div>
+                    <p>Secured Payed Gateways</p>
+                </div>
+                <div>
+                    <img src="../Media/payment-method.png" alt="Payment-Meythod">
+                </div>
+            </div>
+        </section>
+        <!-- Footer Details Ending -->
        </footer>
+       <!-- Footer ending -->
 </body>
 </html>

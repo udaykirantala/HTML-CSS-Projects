@@ -866,5 +866,88 @@
             font-weight: bold;
         }
         /* Footer ending */
+        /* Copy rights Section */
+        .Copay-right-section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(92, 88, 88);
+            padding: 0% 5% 0% 5%;
+        }
 
         /* Home Page ending */
+
+        /* Shope Page Starting */
+        .Nvigation-bar-links{
+            background-color: rgba(128, 128, 128, 0.225);
+            height: 60px;
+            display: flex;
+            justify-content:baseline;
+            align-items: center;
+            column-gap: 10px;
+            padding: 0% 5% 0% 4%;
+            border-radius: 5px  ;
+        }
+        .Nvigation-bar-links a{
+            text-decoration: none;
+            color: black;
+        }
+        .number-of-items-container p{
+            font-size: 20px;
+            padding: 0% 5% 0% 4%;
+        }
+        .Page-Switching-Buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+        }
+        .background-color-button{
+            background-color:  rgb(17, 92, 23);
+            color: white;
+        }
+        .Page-Switching-Buttons button{
+            border: none;
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+        /* Shope Page Eanding */
+        /* Acount Page Starting */
+        .total-account-details-container{
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+            padding: 0% 4% 0% 4% ;
+        }
+        .total-account-details-container table{
+            border-collapse: collapse;
+        }
+        .total-account-details-table td{
+            padding: 10%;
+        }
+        .total-account-details-table table{
+            width: 350px;
+            margin-right: 50px;
+        }
+        .total-account-user-details-table td{
+            padding: 1.5%;
+        }
+        .total-account-user-details-table{
+            margin-bottom: 290px;
+        }
+        .total-account-details-table i{
+            padding-right: 15px;
+        }
+        .total-account-details-colour-text{
+            background-color:   rgb(17, 92, 23);
+            color: white;
+        }
+        .total-user-details-colour-text{
+            background-color:  rgba(128, 128, 128, 0.225);
+        }
+        .total-user-details-colour-text td{
+            padding: 33.5px 0px 33.5px 15px;
+        }
+        /* Account Page Ending */
